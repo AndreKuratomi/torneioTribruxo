@@ -1,0 +1,88 @@
+header,
+div,
+main,
+section,
+article,
+figure,
+img,
+figcaption,
+button,
+p,
+h1,
+h2 {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
+
+header {
+  margin: 10rem 0;
+}
+header h1 {
+  margin-bottom: 5rem;
+}
+header p {
+  margin-bottom: 5rem;
+}
+
+.galeria {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2,
+figure {
+  margin-bottom: 1rem;
+}
+
+img {
+  width: 60%;
+}
+
+article {
+  margin: 1rem 0;
+}
+
+img {
+  width: 150px;
+  height: 200px;
+}
+
+button {
+  background-color: blueviolet;
+  border: none;
+  border-radius: 1rem;
+  color: #000;
+  font-size: large;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  line-break: auto;
+  width: 250px;
+}
+button:hover {
+  background-color: rgb(138, 60, 138);
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .galeria {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .oponentes {
+    margin: 0 1rem;
+  }
+
+  img {
+    width: 300px;
+    height: 400px;
+  }
+}
